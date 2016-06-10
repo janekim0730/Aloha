@@ -100,7 +100,6 @@ input,
 }
 
 p {
-	color: white;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1rem;
 	line-height: 2;
@@ -119,7 +118,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.15rem;
+	font-size: 1.5rem;
 	color: #e2574c;
 	margin-bottom: 1rem;
 }
@@ -163,11 +162,10 @@ section h1 {
 	text-align: center;
 }
 
-
-/* Header */
+/*/////////////////// Header ///////////////////*/
 
 .site-header {
-	background-color: white;
+	background-color: #fff;
 	border-bottom: 1px solid #d7d7d7;
 	left: 0;
 	position: fixed;
@@ -184,39 +182,74 @@ section h1 {
 	padding-top: 1rem;
 }
 
+.screen-reader{
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.total-items{
+	background-color: #e2574c;
+    border-radius: 50%;
+    color: white;
+    display: none;
+    font-size: .8rem;
+    font-weight: bold;
+    height: 20px;
+    line-height: 1;
+    padding-top: 4px;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+    top: 8px;
+    width: 20px;
+}
+
 .logo {
 	align-self: flex-start;
 	flex: 0 1 50%;
-	max-width: 120px;
+	width: 50px;
 }
 
+.logo img{
+	max-width: 120px;
+}
 .cart {
 	align-self: flex-end;
 	flex: 0 1 50%;
-	max-width: 50px;
+	width: 50px;
 	cursor: pointer;
+	text-align: right;
+}
+
+.cart img {
+	height: auto;
+	max-width: 100%;
 }
 
 
-/* Navigation */
-
 .navigation {
-	font-family: "Raleway", sans-serif;
 	align-self: center;
-	flex: 1 0 auto;
+    flex: 1 0 auto;
+	font-family: 'Raleway', sans-serif;
 }
 
 .navigation ul {
-	border-top: 10x solid #d7d7d7;
-	padding-top: .5rem;
-	text-align: center;
+	border-top: 1px solid #d7d7d7;
+    padding-top: .5rem;
+    text-align: center;
 }
 
 .navigation li {
 	display: inline-block;
-	font-weight: bold;
-	margin: 0 1rem;
-	text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 .7rem;
+    text-transform: uppercase;
 }
 
 .navigation li a {
@@ -224,33 +257,35 @@ section h1 {
 }
 
 
-/* Banner */
+/*/////////////////// Banner ///////////////////*/
 
-.banner {
-	background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('images/banner-girl.png') no-repeat center 60px, url('images/flower-bkgd.jpg') repeat-x center top;
+.banner{
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%),
+	url('images/banner-girl.png') no-repeat center 60px,
+	url('images/flower-bkgd.jpg') repeat-x center top;
 	background-size: cover, 150px 369px, cover;
 	height: 400px;
-	margin-top: 105px;
+	margin-top: 97px;
 	position: relative;
 }
 
 .banner-text {
-	color: white;
-	font-weight: bold;
-	left: 50%;
-	line-height: 1;
-	position: absolute;
-	text-align: center;
-	text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-	text-transform: uppercase;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 80%;
+	color: #fff;
+    font-weight: bold;
+    left: 50%;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
 }
 
 .collection {
 	font-size: 1.25rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: .5rem;
 }
 
 .seasons {
@@ -258,22 +293,27 @@ section h1 {
 	font-size: 2.5rem;
 	font-weight: normal;
 	text-transform: none;
+	line-height: 1;
 }
 
+/*/////////////////// Hand Crafted Styles ///////////////////*/
 
-/* Hand Crafted Style */
-
-.about {
+.about-text{
 	text-align: center;
 }
 
 .about-text p {
 	font-size: 1.15rem;
+	text-align: center;
 	color: #2d2d2d;
 }
 
+/*/////////////////// Products ///////////////////*/
 
-/* Products */
+.bx-next,
+.bx-prev {
+	display: none;
+}
 
 .products {
 	padding: 0;
@@ -383,7 +423,7 @@ section h1 {
 }
 
 
-/* Most Loved Products */
+/*/////////////////// Featured ///////////////////*/
 
 .bx-wrapper {
 	margin-bottom: 0;
@@ -400,9 +440,9 @@ section h1 {
 }
 
 .product-list li {
-	padding: 3rem 2rem;
+	padding: 3rem 1rem;
 	text-align: center;
-	width: 100vw;
+	width: 100vw !important;
 }
 
 .product-type,
@@ -435,7 +475,7 @@ section h1 {
 }
 
 
-/* Sign-up */
+/*/////////////////// Newsletter ///////////////////*/
 
 .newsletter {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url('images/wave-bkgd.jpg') no-repeat center bottom;
@@ -470,7 +510,7 @@ input[type="submit"] {
 }
 
 input[type="email"] {
-	padding: .5rem 1.75rem;
+	padding: 1rem 1.75rem;
 	padding-right: 150px;
 	width: 100%;
 }
@@ -484,7 +524,7 @@ input[type="submit"] {
 	color: white;
 	cursor: pointer;
 	font-weight: bold;
-	padding: .25rem 1.5rem;
+	padding: .75rem 1.5rem;
 	position: absolute;
 	right: .25rem;
 	top: .25rem;
@@ -495,7 +535,7 @@ input[type="submit"]:hover {
 }
 
 
-/* Footer */
+/*/////////////////// Footer ///////////////////*/
 
 .site-footer {
 	background-color: #242424;
@@ -548,11 +588,12 @@ input[type="submit"]:hover {
 	min-width: 25px;
 }
 
+/*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-//*/
+/*////////////////////// Media queries /////////////////////*/
+/*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-//*/
 
-/*///////////////// Media queries /////////////////*/
 
-
-/* Tablet */
+/*/-/-/-/-/-/-/-/-/-/-/-/-/ Tablet /-/-/-/-/-/-/-/-/-/-/-/-/*/
 
 @media only screen and (min-width: 600px) {
 	html {
@@ -589,7 +630,7 @@ input[type="submit"]:hover {
 	}
 	/* Banner */
 	.banner {
-		margin-top: 83px;
+		margin-top: 76px;
 	}
 	.seasons {
 		font-size: 3rem;
@@ -624,7 +665,7 @@ input[type="submit"]:hover {
 	}
 	/* Most-Loved Products */
 	.product-list li {
-		width: 50vw;
+		width: 50vw !important;
 	}
 	/* Sign-up */
 	.sign-up-wrapper {
@@ -655,28 +696,29 @@ input[type="submit"]:hover {
 }
 
 
-/* Desktop */
+/*/-/-/-/-/-/-/-/-/-/-/-/-/ Desktop /-/-/-/-/-/-/-/-/-/-/-/-/*/
 
 @media only screen and (min-width: 1240px) {
 	.container {
 		max-width: 1240px;
 	}
 	/* Header */
-	.logo img .cart img {
+	.logo img,
+	.cart img {
 		max-width: 160px;
 	}
 	.cart {
 		width: 60px;
 	}
 	.navigation li {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		margin: 1rem;
 	}
 	/* Banner */
 	.banner {
 		background-size: cover, 250px 615px, contain;
 		height: 550px;
-		margin-top: 97px;
+		margin-top: 88px;
 	}
 	.seasons {
 		font-size: 4rem;
@@ -694,7 +736,7 @@ input[type="submit"]:hover {
 		margin-bottom: 0;
 	}
 	.product-list li {
-		width: 25vw;
+		width: 25vw !important;
 	}
 	/* Sign-up */
 	.sign-up-wrapper {
