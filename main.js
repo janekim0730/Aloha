@@ -1,9 +1,10 @@
+// bxslider
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     auto:true  
   });
 
-// bxslider
+// subscribe
 $(function() {
 		$('.newsletter').on('submit', 'form', function(event) {
 			event.preventDefault();
