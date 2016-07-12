@@ -1,7 +1,8 @@
 # Aloha Apparel
 
 Summary
------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+<p>http://janekim0730.github.io/Project01-AlohaApparel/<p>
 <p>Aloha Apparel is a front page for e-commerce website. It is built by semantic HTML5 markup, appropriate use of paragraph, heading,
 and list elements, CSS properties for altering the visual display of text, and mobile-first approach. It is also a responsive website 
 optimized for 3 screen sizes: mobile, tablet and desktop. </p>
